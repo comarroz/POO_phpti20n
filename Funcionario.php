@@ -7,12 +7,12 @@
         protected string $cargo;
         protected float  $salario;
 
-        public function __construct(string $cpf,
-                                    string $nome,
+        public function __construct(string      $cpf,
+                                    string     $nome,
                                     string $telefone,
                                     string $endereco,
-                                    string $cargo,
-                                    float $salario
+                                    string    $cargo,
+                                    float   $salario
         
         
         )

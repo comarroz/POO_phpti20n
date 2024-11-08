@@ -6,11 +6,12 @@
   Class Cliente extends Pessoa{
     protected float $precoTotal;
 
-    public function __construct(string $cpf,
-                                 string $nome,
-                                string $telefone,
-                                string $endereco,
-                                float  $precoTotal
+    public function __construct(string        $cpf,
+                                 string      $nome,
+                                 string  $telefone,
+                                 string  $endereco,
+                                 float  $precoTotal
+
 
             
 

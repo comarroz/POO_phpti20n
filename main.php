@@ -3,9 +3,19 @@
     require_once('Cliente.php');//Requisitando uma classe
     require_once('Pessoa.php');
     require_once('Funcionario.php');
+    require_once('DAO/Conexão.php');
+    require_once('DAO/Inserir.php');
+    require_once('DAO/Consultar.php');
     use PHP\Modelo\Cliente;//Definir a classe 
     use PHP\MOdelo\Pessoa;
     use PHP\Modelo\Funcionario;
+    use PHP\Modelo\DAO\Conexão;
+    use PHP\Modelo\DAO\Inserir;
+    use PHP\MOdelo\DAO\Consultar;
+
+
+
+    /*
 
 
     $cliente = new Cliente("1235","Anderson","119999","Rua",560.60);//Criar um objeto
@@ -15,7 +25,18 @@
     echo $cliente->imprimir()."<br>";
     echo $clienteDois->imprimir()."<br>";
      echo $funcionario->imprimir();
+     */
 
+     $conn = new Conexão();
+     $conn->conectar(); //Acessar o banco de dados
+
+    /* $inserir = new Inserir();
+     echo $inserir->cadastrarPessoa($conn,"1", "Fabio", "Rua","11");
+    */
+     $consultar = new Consultar();
+     echo $consultar->consultarIndividual($conn,'1');
+     echo $consultar->consultarIndividual($conn,'2');
+     echo $consultar->consultarIndividual($conn,'3');
 
 
 ?>
