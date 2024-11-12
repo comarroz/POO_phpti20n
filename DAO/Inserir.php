@@ -24,9 +24,10 @@
                 mysqli_close($conn);
 
                 if($result){
-                    return "<br>Inserido com Sucesso ! ";
+                    return "<br>Inserido com Sucesso! ";
+                }else{
+                    return "<br><br>Não Inserido";
                 }
-                return "<br><br>Não Inserido";
             }catch(Except $erro)
             {
                 return "<br>Algo deu errado<br><br>".$erro;

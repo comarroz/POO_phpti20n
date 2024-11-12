@@ -23,7 +23,7 @@
                 {
                     if($dados['codigo'] == $codigo){
                         echo "\nCódigo: ".$dados['codigo'].
-                            "<br>Código: ".$dados['nome'].
+                            "<br>Nome: ".$dados['nome'].
                             "<br>Telefone: ".$dados['telefone']. 
                             "<br>Endereço: ".$dados['endereco'];
                         return;//Encerrar o processo
